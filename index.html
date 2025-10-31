@@ -28,13 +28,12 @@
         body {
             /* NOTE: Local images won't load in Codepen/online tools. */
             /* If this is for local testing, the path might be correct. */
-            background: url(images/SFYN8128.JPG);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
+          
             font-family: Arial, sans-serif;
             /* Added a fallback font */
             color: var(--white);
+            margin: 0;
+            padding: 0;
         }
 
         .container {
@@ -153,6 +152,10 @@
 
         .hero-content-wrapper {
             /* ... (other styles) ... */
+            background-image: url(images/SFYN8128.JPG);
+              background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
             position: relative;
             z-index: 3;
             display: flex;
@@ -164,6 +167,7 @@
 
         .hero-text {
             width: 55%;
+            
         }
 
         .hero-text h1 {
@@ -203,20 +207,24 @@
         
         .pages{
            gap: 20px;
-           /* background: var(--white); */
-           /* opacity: 0.5; */
+           background: var(--white);
+           gap: 20px;
+           padding: 0 30px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+       justify-content: center;
+        
+      margin: 5px;
       
         }
 
          .card {
+            
       border-radius: 10px;
       box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
       width: 250px;
       padding: 15px;
       position: relative;
-      bottom: 200px;
       
     }
 
@@ -328,7 +336,7 @@
     <header class="main-header">
         <div class="container">
             <div class="logo">
-                <img src="../../Downloads/Gemini_Generated_Image_yg8c16yg8c16yg8c.png" alt="Amaka Firm Logo">
+                <img src="../../HTML CLASS/Law-firm/images/Gemini_Generated_Image_yg8c16yg8c16yg8c.png" alt="Amaka Firm Logo">
                 AMAKA FIRM <span>Lawyer & Attorney New Officem Videos</span>
             </div>
 
@@ -373,7 +381,7 @@
             </div>
             <div class="hero-image-container">
                 <div class="judge-hero-image">
-                    <img src="../../Downloads/VBGX3635-removebg-preview.png" alt="Judge Image">
+                    <img src="../../HTML CLASS/Law-firm/images/VBGX3635-removebg-preview.png" alt="Judge Image">
                 </div>
             </div>
 
@@ -382,10 +390,10 @@
     <section class="book">
     <div id="page" class="pages">
         
-        <div id="#" class="card"><img src="../../Documents/HTML CLASS/images/IMG-20251030-WA0025.jpg" alt=""></div>
-        <div id="#" class="card"><img src="../../Documents/HTML CLASS/images/IMG-20251030-WA0027.jpg" alt=""></div>
-        <div id="#" class="card"><img src="../../Documents/HTML CLASS/images/IMG-20251030-WA0031.jpg" alt=""></div>
-        <div id="#" class="card"><img src="../../Documents/HTML CLASS/images/IMG-20251030-WA0032.jpg" alt=""></div>
+        <div id="#" class="card"><img src="../../HTML CLASS/Law-firm/images/IMG-20251030-WA0025.jpg" alt=""></div>
+        <div id="#" class="card"><img src="../../HTML CLASS/Law-firm/images/IMG-20251030-WA0031.jpg" alt=""></div>
+        <div id="#" class="card"><img src="../../HTML CLASS/Law-firm/images/IMG-20251030-WA0032.jpg" alt=""></div>
+        <div id="#" class="card"><img src="../../HTML CLASS/Law-firm/images/IMG-20251030-WA0034.jpg" alt=""></div>
     </div>
     </section>
     <section id="contact">
