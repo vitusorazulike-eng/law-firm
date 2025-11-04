@@ -28,7 +28,7 @@
         body {
             /* NOTE: Local images won't load in Codepen/online tools. */
             /* If this is for local testing, the path might be correct. */
-          
+
             font-family: Arial, sans-serif;
             /* Added a fallback font */
             color: var(--white);
@@ -150,10 +150,34 @@
 
         }
 
+        /* about me */
+        .about-me {
+            color: #111;
+            /* padding: 60px 20px; */
+        }
+
+        .about-me h1 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .about-me h1,
+        .about-me h2 {
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .about-me h2 span {
+            background: #e5b300;
+            color: #333;
+        }
+
         .hero-content-wrapper {
             /* ... (other styles) ... */
             background-image: url(images/SFYN8128.JPG);
-              background-repeat: no-repeat;
+            background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
             position: relative;
@@ -167,7 +191,7 @@
 
         .hero-text {
             width: 55%;
-            
+
         }
 
         .hero-text h1 {
@@ -204,99 +228,100 @@
             /* Ensure the image container doesn't block the layout */
             display: block;
         }
-        
-        .page{
-             display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 0 30px;
-           
-      
+
+        .page {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 30px;
+
+
         }
 
-         .card {
-             background: white;
-    padding: 20px;
-    color: #111;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-      width: 250px;
-      padding: 15px;
-      position: relative;
-      
-    }
-    #contact{
-        /* justify-content: center; */
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        
-    }
-    #contact p{
-        text-align: center;
-        flex-direction: column;
-    }
+        .card {
+            background: white;
+            padding: 20px;
+            color: #111;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 15px;
+            position: relative;
 
-    .card img{
-      width: 100%; height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 1px;
-    }
-    #contact p {
-    margin: 10px 0;
-    font-size: 1.1rem;
-}
+        }
 
-/* Linkedin Button */
-.linkedin-btn {
-    display: inline-block;
-    background: #0077b5;
-    color: white;
-    padding: 1px 2px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 10px;
-    transition: background 0.3s;
-}
+        #contact {
+            /* justify-content: center; */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
 
-.linkedin-btn:hover {
-    background: #005983;
-}
-.email-btn {
-    display: inline-block;
-    background: #25a244;
-    color: white;
-    padding: 1px 2px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s;
-}
+        }
+        #contact h2{
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-.email-btn:hover {
-    background: #1e7c35;
-}
+        #contact p {
+            text-align: center;
+            flex-direction: column;
+             margin: 10px 0;
+            font-size: 1.1rem;
+        }
 
-.whatsapp-btn {
-    display: inline-block;
-    background: #25d366;
-    width: 200px;
-    padding: 8px 12px;
-    color: white;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s;
-}
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1px;
+        }
 
-.whatsapp-btn:hover {
-    background: #1da851;
-}
-   
+        .card h2 {
+            background: #e5b300;
+        }
 
+        /* email */
+        .email-btn {
+            display: inline-block;
+            background: #25a244;
+            color: white;
+            padding: 1px 2px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .email-btn:hover {
+            background: #1e7c35;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25d366;
+            width: 200px;
+            padding: 8px 12px;
+            color: white;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1da851;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
 
         /* --- media --- */
         @media (max-width: 1024px) {
@@ -421,7 +446,7 @@
             <nav class="nav">
                 <ul>
                     <li><a href="#hero-section">HOMEPAGES</a></li>
-                    <li><a href="#page">ABOUT ME</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
                     <li><a href="#">ELEMENTS</a></li>
                     <li><a href="#">PRACTICE AREAS</a></li>
                     <li><a href="#">BLOG</a></li>
@@ -449,23 +474,45 @@
 
         </div>
     </section>
+
+    <div id="about-me" class="about-me">
+        <h1>ABOUT ME</h1>
+        <h2>I'm<span>Orazulike Amaka</span>LL.D, DL MCARB</h2>
+
+    </div>
     <div id="pages" class="page">
-        <div class="card"><img src="images/IMG-20251030-WA0025.jpg" alt=""></div>
-        <div class="card"><img src="images/IMG-20251030-WA0031.jpg" alt=""></div>
-        <div class="card"><img src="../aim/images/IMG-20251030-WA0032.jpg" alt=""></div>
-        <div class="card"><img src="../aim/images/IMG-20251030-WA0034.jpg" alt=""></div>
+        <div class="card"><img src="images/IMG_E1472.JPG" alt="">
+            <h2>Property/Real Estate</h2>
+            <h3>We prepare and review documents to protect your investment</h3>
+        </div>
+        <div class="card"><img src="images/IMG_E1471.JPG" alt="">
+            <h2>Family Law</h2>
+            <h3>Ensure fair division of property, protect your parental rights, and settle family conflicts peacefully
+            </h3>
+        </div>
+        <div class="card"><img src="../aim/images/IMG_E1473.JPG" alt="">
+            <h2>Constitutional & Human Rights law</h2>
+            <h3>Fundamental rights and freedoms - especially when violated by authorities or organizations</h3>
+        </div>
+        <div class="card"><img src="../aim/images/IMG-20251030-WA0025.jpg" alt="">
+            <h2>Criminal Law</h2>
+            <h3>To protect your rights, gather evidence, represent you in court, and fight to reduce or dismiss charges
+            </h3>
+        </div>
     </div>
     <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>+2348164824038</p>
-            <p><a href="mailto:vitusorazulike@gmail.com" class="email-btn">Send Me an Email</a>
-            <a href="https://wa.me/2348164824038" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
-            <a href="https://www.linkedin.com/in/chibuike-orazulike-721aa2389" class="linkedin-btn" target="_blank">
-                Connect on Linkedin</p>
-            </a>
-        </section>
-    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>+2347031638899</p>
+        <p><a href="mailto:amylawfirm@yahoo.com.com" class="email-btn">📝Send Me an Email</a>
+            <a href="https://wa.me/+2347031638899" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Vitus Orazulike - All rights
+            reserved.
+        </p>
+    </footer>
 </body>
 
 </html>
